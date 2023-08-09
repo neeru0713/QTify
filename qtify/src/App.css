@@ -1,6 +1,5 @@
 body {
   background-color: rgb(235, 227, 227);
-
 }
 
 .dashboard h4 {
@@ -18,18 +17,18 @@ td,
 th {
   padding: 0 2%;
 }
-tr{
+tr {
   /* border-bottom: 1px solid gray; */
   padding-bottom: 2.5%;
   margin-top: 1%;
 }
 .green {
-  color:rgb(59, 227, 59);
+  color: rgb(59, 227, 59);
 }
-.red{
-  color:rgb(233, 103, 103);
+.red {
+  color: rgb(233, 103, 103);
 }
 
-hr{
+hr {
   width: 150%;
 }

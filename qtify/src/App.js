@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <DashBoard />
       <Table />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

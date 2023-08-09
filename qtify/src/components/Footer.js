@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
-import {CiTwitter} from 'react-icons/ci';
+import { CiTwitter } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="flex justify-evenly w-100 bg-[#4d77ce] p-10 text-white">
@@ -55,6 +55,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

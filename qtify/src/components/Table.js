@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TableRow from "./TableRow";
 
-
 const Table = () => {
   const [data, setData] = useState([]);
   const [offset, setOffset] = useState(0);
@@ -10,10 +9,10 @@ const Table = () => {
   async function fetchData() {
     try {
       const response = await fetch(
-        `https://api.coincap.io/v2/assets?limit=20&offset=${offset}`
+        `https://api.coincap.io/v2/assets?limit=20&offset=${offset}`,
       );
       const jsonData = await response.json();
-      setData( [...data, ...jsonData.data]); // Fix: Use 'setData' instead of 'getData'
+      setData([...data, ...jsonData.data]); // Fix: Use 'setData' instead of 'getData'
       // set state of offset  cur val + 20
       setOffset(offset + 20);
     } catch (e) {
@@ -21,8 +20,8 @@ const Table = () => {
     }
   }
 
-  function handleButtonClick(){
-      fetchData()
+  function handleButtonClick() {
+    fetchData();
   }
 
   useEffect(() => {
@@ -45,7 +44,7 @@ const Table = () => {
               <th className="w-[4%]">Change(24Hr)</th>
             </tr>
           </thead>
-            <hr/>
+          <hr />
           <tbody>
             {data.map((item) => (
               <TableRow rowData={item} />
